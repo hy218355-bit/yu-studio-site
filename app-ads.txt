@@ -1,0 +1,4 @@
+# Replace this line with the value AdMob shows you at:
+# AdMob → app-ads.txt → 「app-ads.txt の設定方法」
+# Format example (do NOT use this fake pub-ID — get yours from AdMob):
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
