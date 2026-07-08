@@ -1,0 +1,8 @@
+name = "yu-studio-site"
+compatibility_date = "2025-06-01"
+
+# Static-assets-only Worker: serve the repository root as the site.
+# Naming the Worker here is what lets `wrangler deploy` confirm it should
+# update the existing "yu-studio-site" Worker instead of stopping.
+[assets]
+directory = "."
