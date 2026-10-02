@@ -39,7 +39,7 @@ if (dialog) {
       .closest("figure")
       .querySelector("figcaption").textContent;
     dialog.querySelector(".screen-counter").textContent =
-      `${active + 1} / ${screens.length}`;
+      `${screens.length}枚中 ${active + 1}枚目`;
   }
   screens.forEach((screen, index) =>
     screen.addEventListener("click", () => {
