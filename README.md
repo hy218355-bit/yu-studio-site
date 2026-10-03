@@ -26,7 +26,7 @@ amayadori.html          雨宿りの紹介
 studyquest/index.html   従来 URL からの転送
 amayadori/index.html    従来 URL からの転送
 assets/site.css        3 ページ共通スタイル（ライト配色固定）
-assets/site.js         モバイルナビゲーション・画面拡大
+assets/site.js         画面拡大・前後切替
 assets/*.png           既存アプリアイコン・実画面
 app-ads.txt             AdMob 用（ルート配置を維持）
 admin.html             既存の管理用ページ
@@ -43,12 +43,12 @@ node --check assets/site.js
 
 - デスクトップ / スマホ / 中間幅で横スクロールや欠けがないこと。
 - 作品の詳細、アプリ一覧へのリンク、ブラウザの戻る操作。
-- モバイルメニューの反復開閉、リンク選択時の閉鎖、Escape。
+- 常時表示ナビゲーション、気分から選ぶリンク、同じリンクの繰り返し操作。
 - 各作品のスクリーンショット拡大、前後切替、Escape、フォーカスの復帰。
 - Tab / Shift+Tab / Enter による操作と本文へのスキップ。
 - OS の reduced motion で入場・ホバーアニメーションとスムーズスクロールを停止。
 - OS のダークモードでもライト配色を維持。
-- JavaScript 無効時もナビゲーションと作品の紹介を閲覧可能。
+- JavaScript 無効時もナビゲーション・作品紹介・スクリーンショットへの直接リンクを利用可能。
 
 Google Fonts を読み込めない場合は、OS の明朝体・ゴシック体にフォールバックします。サーバー API や解析サービスは追加していません。
 

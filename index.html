@@ -4,283 +4,188 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="color-scheme" content="light" />
-    <meta name="theme-color" content="#f7f7f0" />
+    <meta name="theme-color" content="#fbf9f5" />
     <title>Yu Studio — 小さく、長く遊べるものを</title>
     <meta
       name="description"
-      content="Yu Studio は、ひとりで作るアプリスタジオです。毎日の習慣にそっと寄り添う、小さく長く遊べるアプリを作っています。"
+      content="Yu Studio は、ひとりで作るアプリスタジオです。StudyQuest、雨宿りと、毎日を少し楽しくするアプリを紹介します。"
     />
     <link rel="icon" href="assets/sq-icon.png" />
     <link rel="apple-touch-icon" href="assets/sq-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+JP:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800;900&family=Noto+Serif+JP:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/site.css" />
     <script src="assets/site.js" defer></script>
   </head>
-  <body>
-    <a class="skip-link" href="#main">本文へスキップ</a>
-    <header class="site-header">
-      <div class="shell header-inner">
-        <a class="wordmark" href="index.html" aria-label="Yu Studio ホーム"
-          ><span class="brand-flower" aria-hidden="true">✳</span>Yu Studio<span
-            class="brand-dot"
-            >.</span
-          ></a
-        ><button
-          type="button"
-          class="menu-toggle"
-          aria-controls="site-nav"
-          aria-expanded="false"
-        >
-          メニュー <span aria-hidden="true">＋</span>
-        </button>
-        <nav id="site-nav" aria-label="メインナビゲーション">
-          <a href="#apps">アプリ一覧</a><a href="#studio">スタジオについて</a
-          ><a href="mailto:hy218355@gmail.com"
-            >お問い合わせ <span aria-hidden="true">↗</span></a
-          >
-        </nav>
-      </div>
+  <body class="studio">
+    <a class="skip" href="#main">本文へスキップ</a>
+    <header class="wrap">
+      <a class="logo" href="index.html" aria-label="Yu Studio ホーム"
+        ><span aria-hidden="true">✳</span> Yu Studio.</a
+      >
+      <nav id="site-nav" aria-label="メインナビゲーション">
+        <a href="#apps">アプリ一覧</a><a href="#studio">スタジオについて</a>
+      </nav>
+      <a class="contact" href="mailto:hy218355@gmail.com">お問い合わせ ↗</a>
     </header>
     <main id="main" tabindex="-1">
-      <section class="home-hero shell" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">
-            <span class="status-dot"></span> ひとりで、ひとつずつ。
+      <section class="st-hero wrap">
+        <div class="st-hero-top">
+          <div class="st-note">
+            <span aria-hidden="true">✳</span> ひとりで、ひとつずつ。
+          </div>
+          <h1>いつもの毎日に、<br /><span>ちいさな楽しみ。</span></h1>
+          <p>
+            がんばる日も、ひと休みの日も。<br />あなたのそばに、長くいられるアプリを。
           </p>
-          <h1 id="hero-title">
-            小さく、<br />長く<span class="play-word"
-              >遊べる<svg viewBox="0 0 300 20" aria-hidden="true">
-                <path
-                  d="M4 13 Q130 -3 294 10 M16 18 Q160 6 282 16"
-                /></svg></span
-            ><br />ものを。
-          </h1>
-          <p class="hero-intro">
-            いつもの毎日に、ちいさな楽しみを。<br />ひとりで、ひとつずつ。<br />長く付き合えるアプリを作っています。
-          </p>
-          <a class="round-link" href="#apps"
-            ><span class="circle-arrow" aria-hidden="true">↓</span>
-            アプリを見てみる <span class="link-count">02</span></a
-          >
+          <div class="st-choices">
+            <a href="#studyquest"
+              ><span aria-hidden="true">✧</span> 集中したい日</a
+            ><a href="#amayadori"
+              ><span aria-hidden="true">☂</span> ひと息つきたい日</a
+            >
+          </div>
         </div>
-        <div
-          class="hero-art"
-          role="group"
-          aria-label="StudyQuest と雨宿りのアプリ画面"
-        >
-          <div class="art-orbit" aria-hidden="true"></div>
-          <span class="art-spark" aria-hidden="true">✳</span>
-          <div class="hero-phone phone-quest">
-            <img
+        <div class="st-shelf">
+          <div class="st-shelf-note">
+            <span>今日も、<br />自分のペースで。</span
+            ><i aria-hidden="true">⤵</i>
+          </div>
+          <a
+            class="st-device st-device-quest"
+            href="studyquest.html"
+            aria-label="StudyQuest の詳細を見る"
+            ><img
               src="assets/screen-home.png"
               width="560"
               height="1257"
-              alt="StudyQuest：勉強時間を冒険に変えるホーム画面"
-              fetchpriority="high"
-            />
-          </div>
-          <div class="hero-phone phone-rain">
-            <img
-              src="assets/ama-screen-1.png"
+              alt="StudyQuest の冒険者と今日の学習時間"
+              fetchpriority="high" /></a
+          ><span class="st-shelf-star" aria-hidden="true">✳</span
+          ><a
+            class="st-device st-device-rain"
+            href="amayadori.html"
+            aria-label="雨宿りの詳細を見る"
+            ><img
+              src="assets/ama-screen-2.png"
               width="560"
               height="1217"
-              alt="雨宿り：月明かりと雨の海辺の情景"
+              alt="雨宿りの雨の街と置き時計"
               fetchpriority="high"
-            />
-          </div>
-          <span class="art-note note-quest">日々に、小さな冒険。</span
-          ><span class="art-note note-rain">心に、静かな余白。</span>
-          <div class="art-stamp">
-            <span>小さなアプリ</span
-            ><span class="stamp-star" aria-hidden="true">✳</span
-            ><span>毎日の楽しみ</span>
-          </div>
-        </div>
-        <div class="hero-baseline">
-          <span>日常に、遊び心の余白を。</span
-          ><span>作品をのぞいてみる <span aria-hidden="true">↓</span></span>
+          /></a>
+          <div class="st-shelf-seal">そっと、<br />毎日のおともに。</div>
         </div>
       </section>
-      <section class="works shell" id="apps" aria-labelledby="apps-title">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">01 / つくったアプリ</p>
-            <h2 id="apps-title">
-              日々に寄り添う、<br class="mobile-only" />ふたつのアプリ。
-            </h2>
-          </div>
-          <p>
-            がんばる時間も、ひと息つく時間も。<br />あなたのペースで、楽しめるものを。
-          </p>
+      <section class="apps wrap" id="apps">
+        <div class="section-title">
+          <p class="eyebrow">Yu Studio のアプリ</p>
+          <h2>あなたの時間に、寄り添うもの。</h2>
+          <p>その日の気分で、開いてみてください。</p>
         </div>
-        <div class="project-grid">
-          <article class="project project-quest">
+        <div class="st-projects">
+          <article class="st-project" id="studyquest">
+            <div class="st-project-copy">
+              <div class="app-brand">
+                <img src="assets/sq-icon.png" width="56" height="56" alt="" />
+                <h3>StudyQuest<small>RPG 学習アプリ · iPhone</small></h3>
+              </div>
+              <p class="st-project-tag">
+                今日の頑張りが、<br />明日の冒険になる。
+              </p>
+              <p>
+                集中した時間が、そのまま経験値に。<br />続けることを、ちょっと楽しく。
+              </p>
+              <a class="pill-link" href="studyquest.html"
+                >アプリについて <span>↗</span></a
+              >
+            </div>
             <a
-              class="project-visual"
+              class="st-project-art"
               href="studyquest.html"
-              aria-label="StudyQuest の詳細を見る"
-              ><div class="visual-top">
-                <span>勉強する時間に、遊び心を。</span><span>01</span>
-              </div>
-              <div class="visual-title">
-                そのひと頑張りが、<br /><em>冒険になる。</em>
-              </div>
-              <div class="project-device">
-                <img
-                  src="assets/screen-home.png"
-                  width="560"
-                  height="1257"
-                  alt="StudyQuest の学習時間と冒険者の画面"
-                  loading="lazy"
-                />
-              </div>
-              <span class="visual-flower" aria-hidden="true">✳</span
-              ><span class="visual-cta" aria-hidden="true">↗</span></a
-            >
-            <div class="project-info">
-              <div class="project-title">
-                <img
-                  src="assets/sq-icon.png"
-                  alt=""
-                  width="52"
-                  height="52"
-                  loading="lazy"
-                />
-                <div>
-                  <h3><a href="studyquest.html">StudyQuest</a></h3>
-                  <p>RPG 学習アプリ · iPhone</p>
-                </div>
-                <span class="availability">配信中</span>
-              </div>
-              <p class="project-description">
-                勉強時間が、そのまま冒険になる。<br />積み重ねた時間を、あなただけの物語に。
-              </p>
-              <a class="text-link" href="studyquest.html"
-                >アプリについて <span aria-hidden="true">↗</span></a
-              >
-            </div>
+              aria-label="StudyQuest の画面と詳細を見る"
+              ><img
+                src="assets/screen-home.png"
+                width="560"
+                height="1257"
+                alt="StudyQuest のホーム画面"
+                loading="lazy"
+            /></a>
           </article>
-          <article class="project project-rain">
-            <a
-              class="project-visual"
-              href="amayadori.html"
-              aria-label="雨宿りの詳細を見る"
-              ><div class="visual-top">
-                <span>何もしない時間も、大切に。</span><span>02</span>
+          <article class="st-project" id="amayadori">
+            <div class="st-project-copy">
+              <div class="app-brand">
+                <img src="assets/ama-icon.png" width="56" height="56" alt="" />
+                <h3>
+                  雨宿り<small>情景メーカー &amp; 置き時計 · iPhone</small>
+                </h3>
               </div>
-              <div class="visual-title">
-                ひと息ついて、<br /><em>雨宿り。</em>
-              </div>
-              <div class="rain-landscape">
-                <img
-                  src="assets/ama-screen-3.png"
-                  width="560"
-                  height="1217"
-                  alt="雨宿りの紅葉並木。灯りのなか、雨を眺める情景"
-                  loading="lazy"
-                />
-              </div>
-              <div class="project-device">
-                <img
-                  src="assets/ama-screen-2.png"
-                  width="560"
-                  height="1217"
-                  alt="雨宿りの雨の街と置き時計の画面"
-                  loading="lazy"
-                />
-              </div>
-              <span class="visual-cta" aria-hidden="true">↗</span></a
-            >
-            <div class="project-info">
-              <div class="project-title">
-                <img
-                  src="assets/ama-icon.png"
-                  alt=""
-                  width="52"
-                  height="52"
-                  loading="lazy"
-                />
-                <div>
-                  <h3>
-                    <a href="amayadori.html">雨宿り <span>Amayadori</span></a>
-                  </h3>
-                  <p>情景メーカー &amp; 置き時計 · iPhone</p>
-                </div>
-                <span class="availability">配信中</span>
-              </div>
-              <p class="project-description">
-                雨の音と、うつくしい情景に。<br />何もしない時間も、少し好きになる。
+              <p class="st-project-tag">
+                雨音に包まれて、<br />ひと息つきませんか。
               </p>
-              <a class="text-link" href="amayadori.html"
-                >アプリについて <span aria-hidden="true">↗</span></a
+              <p>
+                うつくしい情景と、やさしい環境音。<br />何もしない時間も、大切に。
+              </p>
+              <a class="pill-link" href="amayadori.html"
+                >アプリについて <span>↗</span></a
               >
             </div>
+            <a
+              class="st-project-art"
+              href="amayadori.html"
+              aria-label="雨宿りの画面と詳細を見る"
+              ><img
+                src="assets/ama-screen-1.png"
+                width="560"
+                height="1217"
+                alt="雨宿りの静かな海辺"
+                loading="lazy"
+            /></a>
           </article>
         </div>
-        <aside class="in-progress" aria-labelledby="in-progress-title">
-          <div class="in-progress-art" aria-hidden="true">
-            <span class="secret-orbit"></span
-            ><span class="secret-shape"><span>✳</span></span
-            ><span class="secret-spark">✧</span
-            ><span class="secret-line"></span>
+        <aside class="teaser" aria-labelledby="teaser-title">
+          <div class="teaser-art" aria-hidden="true">
+            <i></i><span>✳</span><b>✧</b>
           </div>
-          <div class="in-progress-copy">
+          <div class="teaser-copy">
             <p class="eyebrow">制作の途中から</p>
-            <h3 id="in-progress-title">新作アプリ <span>開発中</span></h3>
-            <p class="secret-message">まだ、ひみつの楽しみ。</p>
-            <p>
-              詳細は準備が整い次第、<br class="mobile-only" />お知らせします。
-            </p>
+            <h3 id="teaser-title">新作アプリ <span>開発中</span></h3>
+            <p class="teaser-tag">まだ、ひみつの楽しみ。</p>
+            <p>詳細は準備が整い次第、お知らせします。</p>
           </div>
         </aside>
       </section>
-      <section class="studio" id="studio" aria-labelledby="studio-title">
-        <div class="shell studio-inner">
-          <div class="studio-label">
-            <p class="eyebrow">02 / スタジオについて</p>
-            <div class="studio-emblem" aria-hidden="true">y<span>✳</span></div>
-            <span class="studio-signature">小さな、個人のアプリスタジオ。</span>
-          </div>
-          <div class="studio-copy">
-            <h2 id="studio-title">誰かの毎日に、<br />長く残るものを。</h2>
-            <p>
-              Yu Studio
-              は、個人ではじめた小さなアプリスタジオです。大きく当てることよりも、誰かの毎日に長く残るものを作ることを大切にしています。
-            </p>
-            <p>
-              続けたくなる仕組みと、静かで上質な手ざわり。<br />派手な仕掛けよりも、その小さな積み重ねを。<br />ひとつひとつ、丁寧に作っています。
-            </p>
-            <div class="studio-principles">
-              <span>小さくつくる</span><span>長く楽しむ</span
-              ><span>丁寧に育てる</span>
-            </div>
-          </div>
+      <section class="about wrap" id="studio">
+        <p class="eyebrow">スタジオについて</p>
+        <h2>誰かの毎日に、<br />長く残るものを。</h2>
+        <div class="about-text">
+          <p>
+            Yu Studio
+            は、個人ではじめた小さなアプリスタジオです。大きく当てることよりも、誰かの毎日に長く残るものを作ることを大切にしています。
+          </p>
+          <p>
+            続けたくなる仕組みと、静かで上質な手ざわり。<br />ひとつひとつ、丁寧に作っています。
+          </p>
         </div>
       </section>
     </main>
-    <footer class="site-footer shell">
-      <div class="footer-top">
-        <a class="wordmark" href="index.html"
-          ><span class="brand-flower" aria-hidden="true">✳</span>Yu Studio.</a
+    <footer class="wrap">
+      <div class="footer-main">
+        <a class="logo" href="index.html"
+          ><span aria-hidden="true">✳</span> Yu Studio.</a
         >
         <p>小さく、長く遊べるものを。</p>
-        <a class="text-link" href="mailto:hy218355@gmail.com"
-          >アプリのお問い合わせ <span aria-hidden="true">↗</span></a
-        >
+        <a href="mailto:hy218355@gmail.com">アプリのお問い合わせ ↗</a>
       </div>
       <div class="footer-bottom">
         <small>© 2026 Yu Studio</small>
         <nav aria-label="フッター">
           <a href="studyquest.html">StudyQuest</a
-          ><a href="amayadori.html">雨宿り</a
-          ><a href="#main">ページの先頭へ ↑</a>
+          ><a href="amayadori.html">雨宿り</a><a href="#main">先頭へ ↑</a>
         </nav>
-        <span>ひとつひとつ、丁寧に。</span>
       </div>
     </footer>
   </body>

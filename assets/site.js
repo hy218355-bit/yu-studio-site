@@ -1,30 +1,5 @@
 document.documentElement.classList.add("js");
-// Progressive enhancement: all content and navigation work without JavaScript.
-const menu = document.querySelector(".menu-toggle");
-const nav = document.querySelector("#site-nav");
-function closeMenu(restoreFocus = false) {
-  menu?.setAttribute("aria-expanded", "false");
-  nav?.classList.remove("is-open");
-  if (menu) menu.querySelector("span").textContent = "＋";
-  if (restoreFocus) menu?.focus();
-}
-menu?.addEventListener("click", () => {
-  const open = menu.getAttribute("aria-expanded") !== "true";
-  menu.setAttribute("aria-expanded", String(open));
-  nav.classList.toggle("is-open", open);
-  menu.querySelector("span").textContent = open ? "−" : "＋";
-});
-nav?.addEventListener("click", (event) => {
-  if (event.target.closest("a")) closeMenu();
-});
-document.addEventListener("click", (event) => {
-  if (!event.target.closest(".site-header")) closeMenu();
-});
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && menu?.getAttribute("aria-expanded") === "true")
-    closeMenu(true);
-});
-matchMedia("(min-width: 761px)").addEventListener("change", () => closeMenu());
+// Screenshot links remain usable when JavaScript is disabled.
 const dialog = document.querySelector(".screen-dialog");
 if (dialog) {
   const screens = Array.from(document.querySelectorAll(".screen-button"));
@@ -42,7 +17,8 @@ if (dialog) {
       `${screens.length}枚中 ${active + 1}枚目`;
   }
   screens.forEach((screen, index) =>
-    screen.addEventListener("click", () => {
+    screen.addEventListener("click", (event) => {
+      event.preventDefault();
       showScreen(index);
       dialog.showModal();
     }),
