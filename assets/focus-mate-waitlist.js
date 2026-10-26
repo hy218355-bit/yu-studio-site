@@ -20,9 +20,17 @@
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 25000);
     try {
+      const body = new FormData(form);
+      const params = new URLSearchParams(window.location.search);
+      const local = ['localhost', '127.0.0.1', '::1', '[::1]'].includes(window.location.hostname);
+      const email = String(body.get('email') || '').trim();
+      const knownTest = ['focus-mate-test@example.com', 'focus-mate-production-test@example.com'].includes(email.toLowerCase());
+      body.set('email', email);
+      // Kept only in Formspree, so QA rows can be excluded from valid registrations.
+      body.set('measurement_mode', local || params.get('qa') === '1' || knownTest ? 'qa' : 'live');
       const response = await fetch(form.action, {
         method: 'POST',
-        body: new FormData(form),
+        body,
         headers: { Accept: 'application/json' },
         signal: controller.signal
       });
