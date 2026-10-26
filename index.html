@@ -8,7 +8,7 @@
     <title>Yu Studio — 小さく、長く遊べるものを</title>
     <meta
       name="description"
-      content="Yu Studio は、ひとりで作るアプリスタジオです。StudyQuest、雨宿りと、毎日を少し楽しくするアプリを紹介します。"
+      content="Yu Studio は、ひとりで作るアプリスタジオです。StudyQuest、雨宿りと、開発中の Focus Mate を紹介します。"
     />
     <link rel="icon" href="assets/sq-icon.png" />
     <link rel="apple-touch-icon" href="assets/sq-icon.png" />
@@ -19,6 +19,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/site.css" />
+    <link rel="stylesheet" href="assets/focus-mate.css" />
     <script src="assets/site.js" defer></script>
   </head>
   <body class="studio">
@@ -146,15 +147,30 @@
             /></a>
           </article>
         </div>
-        <aside class="teaser" aria-labelledby="teaser-title">
-          <div class="teaser-art" aria-hidden="true">
-            <i></i><span>✳</span><b>✧</b>
-          </div>
+        <aside class="teaser fm-teaser" aria-labelledby="teaser-title">
+          <a
+            class="fm-teaser-art"
+            href="focus-mate.html"
+            aria-label="開発中の Focus Mate の紹介を見る"
+          >
+            <img
+              src="assets/focus-mate/mizuki.webp"
+              width="768"
+              height="1152"
+              alt="Focus Mate の相棒、美月"
+              loading="lazy"
+            /><span aria-hidden="true">FOCUS MATE / IN DEVELOPMENT</span>
+          </a>
           <div class="teaser-copy">
             <p class="eyebrow">制作の途中から</p>
-            <h3 id="teaser-title">新作アプリ <span>開発中</span></h3>
-            <p class="teaser-tag">まだ、ひみつの楽しみ。</p>
-            <p>詳細は準備が整い次第、お知らせします。</p>
+            <h3 id="teaser-title">Focus Mate <span>開発中</span></h3>
+            <p class="teaser-tag">会話も、努力も、覚えてくれる。</p>
+            <p>
+              5人から選んだ相棒と、今日のひと区切りを。<br />会話も着せ替えも楽しめる集中アプリを、開発中です。
+            </p>
+            <a class="pill-link" href="focus-mate.html"
+              >開発中のアプリについて <span aria-hidden="true">↗</span></a
+            >
           </div>
         </aside>
       </section>
@@ -184,7 +200,9 @@
         <small>© 2026 Yu Studio</small>
         <nav aria-label="フッター">
           <a href="studyquest.html">StudyQuest</a
-          ><a href="amayadori.html">雨宿り</a><a href="#main">先頭へ ↑</a>
+          ><a href="amayadori.html">雨宿り</a
+          ><a href="focus-mate.html">Focus Mate <small>開発中</small></a
+          ><a href="#main">先頭へ ↑</a>
         </nav>
       </div>
     </footer>
